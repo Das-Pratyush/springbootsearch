@@ -1,0 +1,12 @@
+
+body {
+    padding-top: 5rem;
+}
+
+.container {
+    margin-bottom: 4rem;
+}
+
+.table th, .table td {
+    text-align: center;
+}

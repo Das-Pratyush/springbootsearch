@@ -1,0 +1,6 @@
+com\project\search\controller\GadgetController.class
+com\project\search\repository\GadgetRepository.class
+com\project\search\entity\Gadget.class
+com\project\search\controller\GadgetRestController.class
+com\project\search\SearchApiMySqlApplication.class
+com\project\search\service\GadgetService.class

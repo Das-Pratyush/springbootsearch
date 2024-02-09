@@ -1,0 +1,21 @@
+version: '3.8'
+
+services:
+  docker-mysql:
+    image: mysql:5.7
+    environment:
+      MYSQL_ROOT_PASSWORD: dasa
+      MYSQL_DATABASE: electronics
+      MYSQL_USER: root
+      MYSQL_PASSWORD: dasa
+    ports:
+      - "3307:3306"
+
+  web-app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8080:8080"
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:mysql://docker-mysql:3307/electronics?autoReconnect=true&useSSL=false
